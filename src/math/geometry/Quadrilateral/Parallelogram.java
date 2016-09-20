@@ -1,4 +1,4 @@
-package math.geometry;
+package math.geometry.Quadrilateral;
 
 /**
  *
