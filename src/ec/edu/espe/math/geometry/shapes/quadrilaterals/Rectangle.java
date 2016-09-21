@@ -1,5 +1,5 @@
 
-package math.geometry.Quadrilateral;
+package ec.edu.espe.math.geometry.shapes.quadrilaterals;
 
 /**
  *
@@ -18,5 +18,11 @@ public class Rectangle extends Quadrilateral{
     public Float area() {
         return (side_a*side_b);
     }
+
+    public Rectangle(Float side_a, Float side_b) {
+        this.side_a = side_a;
+        this.side_b = side_b;
+    }
+    
     
 }

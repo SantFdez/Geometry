@@ -3,21 +3,32 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package math.geometry.Triangle;
+package ec.edu.espe.math.geometry.shapes.triangles;
 
 import java.util.Objects;
-import math.geometry.Quadrilateral.Shape;
+import ec.edu.espe.math.geometry.shapes.ShapeInterface;
 
 /**
  *
  * @author Labs-DECC
  */
-public abstract class Triangle extends Shape{
+public abstract class Triangle implements ShapeInterface{
 
-    private Float sideOne;
-    private Float sideTwo;
-    private Float sideThree;
+    protected Float sideOne;
+    protected Float sideTwo;
+    protected Float sideThree;
 
+    public Triangle(Float sideOne, Float sideTwo, Float sideThree) {
+        this.sideOne = sideOne;
+        this.sideTwo = sideTwo;
+        this.sideThree = sideThree;
+    }
+
+    public Triangle() {
+    }
+
+    
+    
     public Float getSideOne() {
         return sideOne;
     }

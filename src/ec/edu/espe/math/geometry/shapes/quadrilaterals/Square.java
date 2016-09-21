@@ -1,5 +1,5 @@
 
-package math.geometry.Quadrilateral;
+package ec.edu.espe.math.geometry.shapes.quadrilaterals;
 
 import java.util.Objects;
 
@@ -10,6 +10,10 @@ import java.util.Objects;
 public class Square extends Quadrilateral{
 
     private Float side;
+
+    public Square(Float side) {
+        this.side = side;
+    }
 
     
     @Override
