@@ -12,6 +12,14 @@ public class Romboide extends Quadrilateral{
     private Float big_side;
     private Float height;
 
+    public Romboide(Float small_side, Float big_side, Float height) {
+        this.small_side = small_side;
+        this.big_side = big_side;
+        this.height = height;
+    }
+    
+    
+
     @Override
     public Float perimeter() {
         return small_side + big_side + height;

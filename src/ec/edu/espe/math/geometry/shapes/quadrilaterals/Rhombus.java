@@ -9,6 +9,12 @@ public class Rhombus extends Quadrilateral{
 
     private Float small_diagonal;
     private Float big_diagonal;
+
+    public Rhombus(Float small_diagonal, Float big_diagonal) {
+        this.small_diagonal = small_diagonal;
+        this.big_diagonal = big_diagonal;
+    }
+       
     
     @Override
     public Float perimeter() {
