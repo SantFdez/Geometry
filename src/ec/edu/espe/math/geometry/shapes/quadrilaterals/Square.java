@@ -5,7 +5,7 @@ import java.util.Objects;
 
 /**
  *
- * @author Cazaesclavas
+ * @author GITHUB
  */
 public class Square extends Quadrilateral{
 
