@@ -14,51 +14,35 @@ import ec.edu.espe.math.geometry.shapes.ShapeInterface;
  */
 public abstract class Triangle implements ShapeInterface{
 
-    protected Float sideOne;
-    protected Float sideTwo;
-    protected Float sideThree;
+    protected Float base;
+    protected Float height;
 
-    public Triangle(Float sideOne, Float sideTwo, Float sideThree) {
-        this.sideOne = sideOne;
-        this.sideTwo = sideTwo;
-        this.sideThree = sideThree;
+    public Triangle(Float base, Float height) {
+        this.base = base;
+        this.height = height;
     }
 
-    public Triangle() {
+    public Float getBase() {
+        return base;
     }
 
-    
-    
-    public Float getSideOne() {
-        return sideOne;
+    public void setBase(Float base) {
+        this.base = base;
     }
 
-    public void setSideOne(Float sideOne) {
-        this.sideOne = sideOne;
+    public Float getHeight() {
+        return height;
     }
 
-    public Float getSideTwo() {
-        return sideTwo;
-    }
-
-    public void setSideTwo(Float sideTwo) {
-        this.sideTwo = sideTwo;
-    }
-
-    public Float getSideThree() {
-        return sideThree;
-    }
-
-    public void setSideThree(Float sideThree) {
-        this.sideThree = sideThree;
+    public void setHeight(Float height) {
+        this.height = height;
     }
 
     @Override
     public int hashCode() {
-        int hash = 3;
-        hash = 53 * hash + Objects.hashCode(this.sideOne);
-        hash = 53 * hash + Objects.hashCode(this.sideTwo);
-        hash = 53 * hash + Objects.hashCode(this.sideThree);
+        int hash = 7;
+        hash = 37 * hash + Objects.hashCode(this.base);
+        hash = 37 * hash + Objects.hashCode(this.height);
         return hash;
     }
 
@@ -74,18 +58,15 @@ public abstract class Triangle implements ShapeInterface{
             return false;
         }
         final Triangle other = (Triangle) obj;
-        if (!Objects.equals(this.sideOne, other.sideOne)) {
+        if (!Objects.equals(this.base, other.base)) {
             return false;
         }
-        if (!Objects.equals(this.sideTwo, other.sideTwo)) {
-            return false;
-        }
-        if (!Objects.equals(this.sideThree, other.sideThree)) {
+        if (!Objects.equals(this.height, other.height)) {
             return false;
         }
         return true;
     }
-    
+
     
     
     

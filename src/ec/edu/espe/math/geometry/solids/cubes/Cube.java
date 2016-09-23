@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ec.edu.espe.math.geometry.solids;
+package ec.edu.espe.math.geometry.solids.cubes;
 
 import ec.edu.espe.math.geometry.shapes.quadrilaterals.Square;
 import ec.edu.espe.math.geometry.solids.cubes.CubeSolidInterface;
@@ -23,5 +23,12 @@ public class Cube extends Square implements CubeSolidInterface{
     public Float volume() {
         return (float)(Math.pow(this.getSide(), 3));
     }
+
+    @Override
+    public Float area() {
+        return super.area()*6; 
+    }
+    
+    
     
 }

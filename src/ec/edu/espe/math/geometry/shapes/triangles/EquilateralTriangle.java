@@ -11,21 +11,20 @@ package ec.edu.espe.math.geometry.shapes.triangles;
  */
 public class EquilateralTriangle extends Triangle{
 
-    private Float sideOne;
-
-    public EquilateralTriangle(Float sideOne, Float sideTwo, Float sideThree) {
-        super(sideOne, sideTwo, sideThree);
+   
+    public EquilateralTriangle(Float sideOne) {
+        super(sideOne, null);
     }
     
     
     @Override
     public Float perimeter() {
-        return (float)(Math.sqrt(3/4)*Math.pow(this.sideOne, 2));
+        return (float)(this.base*3);
     }
 
     @Override
     public Float area() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return (float)(Math.sqrt(3)*Math.pow(this.base, 2)/4);
     }
     
 }

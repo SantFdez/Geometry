@@ -9,24 +9,12 @@ package ec.edu.espe.math.geometry.shapes.triangles;
  *
  * @author SONY
  */
-public class ScaleneTriangle extends Triangle{
+public class ScaleneTriangle extends ObtuseAngleTriangle{
 
-    public ScaleneTriangle(Float sideOne, Float sideTwo, Float sideThree) {
-        super(sideOne, sideTwo, sideThree);
+    public ScaleneTriangle(Float side2, Float side3,Float base) {
+        super(side2, side3, base);
     }
-
 
     
-    
-    @Override
-    public Float perimeter() {
-        return this.getSideOne()+this.getSideTwo()+this.getSideThree();
-    }
-
-    @Override
-    public Float area() {
-        float s=this.perimeter();
-        return (float)(Math.sqrt((s-this.sideOne)+(s-this.sideTwo)+(s-this.sideThree)));
-    }
     
 }

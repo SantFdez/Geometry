@@ -15,6 +15,13 @@ import ec.edu.espe.math.geometry.shapes.circunferences.Circunference;
 public class Cylinder extends Circunference implements CylinderSolidInterface{
     private Float height;
 
+    public Cylinder(Float height, Float radio) {
+        super(radio);
+        this.height = height;
+    }
+
+    
+    
     public Float getHeight() {
         return height;
     }

@@ -17,12 +17,6 @@ public class IsocescelesTriangle extends RightAngleTriangle{
 
     @Override
     public Float perimeter() {
-        return (this.sideOne+this.sideTwo+this.sideThree);
+        return (float)(Math.sqrt(Math.pow(this.base/2, 2)+Math.pow(this.height, 2)*2+this.height));
     }
-
-    
-    
-    
-    
-    
 }

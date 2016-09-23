@@ -11,18 +11,43 @@ package ec.edu.espe.math.geometry.shapes.triangles;
  */
 public class ObtuseAngleTriangle extends RightAngleTriangle{
 
-    public ObtuseAngleTriangle(Float base, Float heigth) {
-        super(base, heigth);
+   
+    private Float side2;
+    private Float side3;
+
+    public ObtuseAngleTriangle(Float side2, Float side3, Float base) {
+        super(base, null);
+        this.side2 = side2;
+        this.side3 = side3;
     }
+
+    public Float getSide2() {
+        return side2;
+    }
+
+    public void setSide2(Float side2) {
+        this.side2 = side2;
+    }
+
+    public Float getSide3() {
+        return side3;
+    }
+
+    public void setSide3(Float side3) {
+        this.side3 = side3;
+    }
+    
+    
 
     @Override
     public Float area() {
-        return super.area(); //To change body of generated methods, choose Tools | Templates.
+        float s=this.perimeter();
+        return (float)(Math.sqrt((s-this.getSide2())+(s-this.getSide3())+(s-this.base)));
     }
 
     @Override
     public Float perimeter() {
-        return super.perimeter(); //To change body of generated methods, choose Tools | Templates.
+        return (float)(side2+side3+base);
     }
 
     
